@@ -4,7 +4,9 @@
 <p align="center">
   <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
 </p>
-# Table of Contents
+
+<h2 align="center">Content Table</h2>
+
 
 - [Secure Data Transfer Device](#secure-data-transfer-device)
   - [Project Overview](#project-overview)
