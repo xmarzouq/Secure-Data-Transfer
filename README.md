@@ -22,11 +22,12 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 </p>
 
 <p align="center">
-  <a href="#📦-software-components">Software Components</a> |
-  <a href="#💾-hardware-components">Hardware Components</a>
+  <a href="#software-components">Software Components</a> |
+  <a href="#hardware-components">Hardware Components</a>
 </p>
 
-### 📦 Software Components
+<!-- Software Components Section -->
+<h4 align="center" id="software-components">Software Components</h4>
 
 - **`MainGUI.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
 
@@ -38,7 +39,8 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 
 - **`Decrypt.py`**: Facilitates file decryption, supporting both symmetric and asymmetric encryption.
 
-### 💾 Hardware Components
+<!-- Hardware Components Section -->
+<h4 align="center" id="hardware-components">Hardware Components</h4>
 
 - **_Raspberry Pi:_** The invisible guardian between your computer and an external hard drive, fortifying data security.
 
