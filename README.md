@@ -1,120 +1,175 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** Thanks for checking out the SecureDataTransfer project! If you have any suggestions
-*** or feedback, please feel free to contribute.
-*** Don't forget to give the project a star!
-*** Thanks for your support!
--->
+<!-- Title Section -->
+<h1 align="center">Secure Data Transfer Device 🛡️</h1>
 
-<!-- PROJECT LOGO -->
-<div align="center">
-  <h1>SecureDataTransfer</h1>
-  <p>An innovative Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</p>
-</div>
+<p align="center">
+  <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
+</p>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#usage">Usage</a>
-      <ul>
-        <li><a href="#auto-start">Auto-Start</a></li>
-        <li><a href="#encrypt-files">Encrypt Files</a></li>
-        <li><a href="#decrypt-files">Decrypt Files</a></li>
-        <li><a href="#hardware-integration">Hardware Integration</a></li>
-      </ul>
-    </li>
-    <li><a href="#user-documentation">User Documentation</a></li>
-    <li><a href="#testing-and-feedback">Testing and Feedback</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+<h2 align="left">Content Table 📑</h2>
 
-<!-- ABOUT THE PROJECT -->
+- [Project Overview](#project-overview)
+    - [Software Components](#software-components)
+    - [Hardware Components](#hardware-components)
+- [Usage](#usage)
+    - [Auto-Start](#auto-start)
+    - [Encrypting Files](#encrypting-files)
+    - [Decrypting Files](#decrypting-files)
+    - [Hardware Integration](#hardware-integration)
+- [User Documentation](#user-documentation)
+- [Testing and Feedback](#testing-and-feedback)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Credits](#credits)
+- [Contributions](#contributions)
 
-## About The Project
+<!-- Project Description -->
+<h2 align="center">Project Overview 🚀</h2>
 
-[![Product Screenshot](product-screenshot-link)](product-screenshot-link)
+<p align="center">
+  <em>Protecting Sensitive Data Made Simple.</em>
+</p>
 
-SecureDataTransfer is a Raspberry Pi-based solution designed to enhance data security and privacy. It provides a seamless user experience while ensuring that sensitive data remains protected during storage and transfer.
+The **Secure Data Transfer Device** seamlessly combines hardware and software components to create a robust solution for safeguarding and sharing sensitive information.
 
-### Built With
+<!-- Components Section -->
+<h2 align="center">📦 Software & Hardware Components</h2>
 
-- [Python](https://www.python.org/)
-- [PyQt5](https://riverbankcomputing.com/software/pyqt/intro)
-- [Crypto](https://pypi.org/project/pycryptodome/)
+<p align="center">
+  <em>Explore the Core Components 🧩</strong>
+</p>
 
-<!-- GETTING STARTED -->
+<p align="center">
+  <a href="#software-components">Software Components</a> |
+  <a href="#hardware-components">Hardware Components</a>
+</p>
 
-## Usage
+<!-- Software Components Section -->
+<h4 align="left" id="software-components">Software Components 📂</h4>
+
+- **`MainGUI.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
+
+- **`Secure_Data_Transfer.py`**: The workflow manager, guiding you through file selection, encryption, and destination directory.
+
+- **`SymmetricEncryptAES.py`**: Handles symmetric encryption, perfect for secure group sharing using the AES algorithm.
+
+- **`AsymmetricRSAEncrypt.py`**: Employs RSA encryption with public keys for individual sharing, ensuring data security.
+
+- **`Decrypt.py`**: Facilitates file decryption, supporting both symmetric and asymmetric encryption.
+
+<!-- Hardware Components Section -->
+<h4 align="left" id="hardware-components">Hardware Components 🧰</h4>
+
+- **_Raspberry Pi:_** The invisible guardian between your computer and an external hard drive, fortifying data security.
+
+- **_External Hard Drive:_** A secure vault for your encrypted files, ensuring data remains protected, even if the drive is misplaced.
+
+<!-- Usage Section -->
+<h2 align="center">Usage 📋</h2>
+
+<p align="center">
+  <em>Your Data, Your Control.</em>
+</p>
+
+<p align="center">
+  <a href="#auto-start">Auto-Start</a> |
+  <a href="#encrypting-files">Encrypting Files</a> |
+  <a href="#decrypting-files">Decrypting Files</a> |
+  <a href="#hardware-integration">Hardware Integration</a>
+</p>
 
 ### Auto-Start
 
-Upon connecting the Raspberry Pi to a computer, `MainGUI.py` will automatically start, providing a seamless and user-friendly experience.
+Connect the Raspberry Pi to your computer, and the `MainGUI.py` application will auto-launch, offering a seamless user experience.
 
-### Encrypt Files
+### Encrypting Files
 
-1. Choose to encrypt files for:
-   - Group Sharing (Symmetric Encryption): Select a file, choose the encryption method, and the destination directory on the connected hard drive.
-   - Individual Sharing (Asymmetric Encryption): Select a file, provide the recipient's public key, and choose the destination directory.
+Secure your files for:
 
-### Decrypt Files
+- **Group Sharing (Symmetric Encryption):** Select a file, pick the encryption method, and specify the destination directory on the connected hard drive.
 
-1. Select the encrypted file and choose the decryption method:
-   - Symmetric Encryption: Enter the encryption key and select the destination directory.
-   - Asymmetric Encryption: Choose your private key file and the destination directory.
+- **Individual Sharing (Asymmetric Encryption):** Select a file, provide the recipient's public key, and choose the destination directory.
 
-### Hardware Integration
+### Decrypting Files
 
-- Connect the external hard drive to the Raspberry Pi.
-- Configure the Raspberry Pi to recognize and mount the hard drive when connected.
-- Implement logic in the scripts to handle file encryption, decryption, and data transfer to/from the hard drive.
+To decrypt files:
 
-<!-- USER DOCUMENTATION -->
+- **Symmetric Encryption:** Enter the encryption key and choose the destination directory.
 
-## User Documentation
+- **Asymmetric Encryption:** Pick your private key file and the destination directory.
 
-For detailed instructions on using the "Secure Data Encryption and Transfer Device," please refer to the user documentation provided with the project. It includes step-by-step guides, troubleshooting tips, and contact information for support.
+<!-- Hardware Integration Section -->
+<h2 align="center">Hardware Integration 🔌</h2>
 
-<!-- TESTING AND FEEDBACK -->
+<p align="center">
+  <em>Seamless, Yet Robust.</em>
+</p>
 
-## Testing and Feedback
+1. Connect the external hard drive to the Raspberry Pi.
 
-We have extensively tested the SecureDataTransfer project to ensure the security and usability of the solution. However, user feedback is valuable for further improvements. Please feel free to provide feedback and report any issues in the project's repository.
+2. Power up the Raspberry Pi to recognize and auto-mount the hard drive upon connection.
 
-<!-- LICENSE -->
+3. Connect the Raspberry Pi to the computer  handle file encryption, decryption, and data transfer to/from the hard drive.
 
-## License
+<!-- User Documentation Section -->
+<h2 align="center">User Documentation 📖</h2>
 
-Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
+<p align="center">
+  <em>Guides, Tips, and Support.</em>
+</p>
 
-<!-- CONTACT -->
+For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
 
-## Contact
+<!-- Testing and Feedback Section -->
+<h2 align="center">Testing and Feedback 🧪</h2>
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+<p align="center">
+  <em>We Value Your Input.</em>
+</p>
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+The Secure Data Transfer Device project has undergone extensive testing to ensure both security and usability. However, user feedback is invaluable for further enhancements. Please feel free to provide feedback and report any issues in the project's repository.
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- Dependencies Section -->
+<h2 align="center">Dependencies 🛠️</h2>
 
-## Acknowledgments
+<p align="center">
+  <em>The Building Blocks.</em>
+</p>
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+This project relies on the following dependencies:
 
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
+- [Python](https://www.python.org/): The primary programming language used for scripting and development.
+
+- [PyQt5](https://pypi.org/project/PyQt5/): A Python binding for the Qt application framework, used for creating the graphical user interface (GUI).
+
+- [Crypto](https://pypi.org/project/pycryptodome/): A cryptographic library for Python, providing support for encryption and decryption operations.
+
+- [Raspberry Pi OS](https://www.raspberrypi.org/software/): The operating system for the Raspberry Pi, which serves as the core hardware component.
+
+Please ensure that these dependencies are installed and configured correctly to run the Secure Data Transfer Device.
+
+<!-- License Section -->
+<h2 align="center">License 📜</h2>
+
+<p align="center">
+  <em>Open Source and Free to Use.</em>
+</p>
+
+This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details.
+
+<!-- Credits Section -->
+<h2 align="center">Credits 🙌</h2>
+
+<p align="center">
+  <em>Thanks to Our Contributors.</em>
+</p>
+
+This project was developed by a dedicated senior student group, and it benefited from the valuable insights and contributions of the university researchers. We extend our gratitude to all those who have supported this project.
+
+<!-- Contributions Section -->
+<h2 align="center">Contributions 🤝</h2>
+
+<p align="center">
+  <em>Join Us and Make a Difference.</em>
+</p>
+
+If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
