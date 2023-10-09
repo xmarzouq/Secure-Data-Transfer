@@ -8,7 +8,6 @@
 <h2 align="left">Content Table</h2>
 
 
-- [Secure Data Transfer Device](#secure-data-transfer-device)
   - [Project Overview](#project-overview)
     - [Software Components](#software-components)
     - [Hardware Components](#hardware-components)
@@ -33,6 +32,7 @@
 
 The **Secure Data Transfer Device** seamlessly combines hardware and software components to create a robust solution for safeguarding and sharing sensitive information.
 
+<h1> </h1>
 <!-- Components Section -->
 <h2 align="center">📦 Software & Hardware Components</h2>
 
@@ -65,6 +65,7 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 
 - **_External Hard Drive:_** A secure vault for your encrypted files, ensuring data remains protected, even if the drive is misplaced.
 
+<h1> </h1>
 <!-- Usage Section -->
 <h2 align="center">Usage</h2>
 
@@ -99,6 +100,7 @@ To decrypt files:
 
 - **Asymmetric Encryption:** Pick your private key file and the destination directory.
 
+<h1> </h1>
 <!-- Hardware Integration Section -->
 <h2 align="center">Hardware Integration</h2>
 
