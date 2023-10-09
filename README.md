@@ -8,13 +8,13 @@
 <h2 align="left">Content Table 📑</h2>
 
 - [Project Overview](#project-overview)
-    - [Software Components](#software-components)
-    - [Hardware Components](#hardware-components)
+  - [Software Components](#software-components)
+  - [Hardware Components](#hardware-components)
 - [Usage](#usage)
-    - [Auto-Start](#auto-start)
-    - [Encrypting Files](#encrypting-files)
-    - [Decrypting Files](#decrypting-files)
-    - [Hardware Integration](#hardware-integration)
+  - [Auto-Start](#auto-start)
+  - [Encrypting Files](#encrypting-files)
+  - [Decrypting Files](#decrypting-files)
+  - [Hardware Integration](#hardware-integration)
 - [User Documentation](#user-documentation)
 - [Testing and Feedback](#testing-and-feedback)
 - [Dependencies](#dependencies)
@@ -108,7 +108,7 @@ To decrypt files:
 
 2. Power up the Raspberry Pi to recognize and auto-mount the hard drive upon connection.
 
-3. Connect the Raspberry Pi to the computer  handle file encryption, decryption, and data transfer to/from the hard drive.
+3. Connect the Raspberry Pi to the computer handle file encryption, decryption, and data transfer to/from the hard drive.
 
 <!-- User Documentation Section -->
 <h2 align="center">User Documentation 📖</h2>
@@ -147,6 +147,9 @@ This project relies on the following dependencies:
 
 Please ensure that these dependencies are installed and configured correctly to run the Secure Data Transfer Device.
 
+```bash
+pip install -r requirements.txt
+
 <!-- License Section -->
 <h2 align="center">License 📜</h2>
 
@@ -173,3 +176,4 @@ This project was developed by a dedicated senior student group, and it benefited
 </p>
 
 If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
+```
