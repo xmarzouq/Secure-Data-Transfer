@@ -149,6 +149,7 @@ Please ensure that these dependencies are installed and configured correctly to 
 
 ```bash
 pip install -r requirements.txt
+```
 
 <!-- License Section -->
 <h2 align="center">License 📜</h2>
