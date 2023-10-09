@@ -5,7 +5,7 @@
   <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
 </p>
 
-<h2 align="center">Content Table</h2>
+<h2 align="left">Content Table</h2>
 
 
 - [Secure Data Transfer Device](#secure-data-transfer-device)
@@ -34,19 +34,19 @@
 The **Secure Data Transfer Device** seamlessly combines hardware and software components to create a robust solution for safeguarding and sharing sensitive information.
 
 <!-- Components Section -->
-<h3 align="center">📦 Software & Hardware Components</h3>
+<h2 align="center">📦 Software & Hardware Components</h2>
 
 <p align="center">
-  <strong>Explore the Core Components</strong>
+  <em>Explore the Core Components</strong>
 </p>
 
-<p align="left">
+<p align="center">
   <a href="#software-components">Software Components</a> |
   <a href="#hardware-components">Hardware Components</a>
 </p>
 
 <!-- Software Components Section -->
-<h4 align="center" id="software-components">Software Components</h4>
+<h4 align="left" id="software-components">Software Components</h4>
 
 - **`MainGUI.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
 
@@ -59,7 +59,7 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 - **`Decrypt.py`**: Facilitates file decryption, supporting both symmetric and asymmetric encryption.
 
 <!-- Hardware Components Section -->
-<h4 align="center" id="hardware-components">Hardware Components</h4>
+<h4 align="left" id="hardware-components">Hardware Components</h4>
 
 - **_Raspberry Pi:_** The invisible guardian between your computer and an external hard drive, fortifying data security.
 
