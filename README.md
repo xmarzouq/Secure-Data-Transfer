@@ -1,120 +1,69 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** Thanks for checking out the SecureDataTransfer project! If you have any suggestions
-*** or feedback, please feel free to contribute.
-*** Don't forget to give the project a star!
-*** Thanks for your support!
--->
+# Secure Data Transfer Device
 
-<!-- PROJECT LOGO -->
-<div align="center">
-  <h1>SecureDataTransfer</h1>
-  <p>An innovative Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</p>
-</div>
+## Project Description
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#usage">Usage</a>
-      <ul>
-        <li><a href="#auto-start">Auto-Start</a></li>
-        <li><a href="#encrypt-files">Encrypt Files</a></li>
-        <li><a href="#decrypt-files">Decrypt Files</a></li>
-        <li><a href="#hardware-integration">Hardware Integration</a></li>
-      </ul>
-    </li>
-    <li><a href="#user-documentation">User Documentation</a></li>
-    <li><a href="#testing-and-feedback">Testing and Feedback</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+The Secure Data Transfer Device is designed to provide users with a secure and user-friendly solution for encrypting, transferring, and decrypting data while maintaining data privacy and security. This project leverages the Raspberry Pi as a core hardware component to act as an invisible intermediary between the user's computer and an external hard drive. It ensures that data remains protected during storage and transfer, offering a robust solution for secure data management.
 
-<!-- ABOUT THE PROJECT -->
+## Table of Contents
 
-## About The Project
+- [How to Install and Run the Project](#how-to-install-and-run-the-project)
+- [How to Use the Project](#how-to-use-the-project)
+- [Credits](#credits)
+- [License](#license)
 
-[![Product Screenshot](product-screenshot-link)](product-screenshot-link)
+## How to Install and Run the Project
 
-SecureDataTransfer is a Raspberry Pi-based solution designed to enhance data security and privacy. It provides a seamless user experience while ensuring that sensitive data remains protected during storage and transfer.
+To install and run the Secure Data Transfer Device, follow these steps:
 
-### Built With
+1. Insert the Raspberry Pi into your computer.
 
-- [Python](https://www.python.org/)
-- [PyQt5](https://riverbankcomputing.com/software/pyqt/intro)
-- [Crypto](https://pypi.org/project/pycryptodome/)
+2. Run the MainGUI.py script to initiate the graphical user interface (GUI).
 
-<!-- GETTING STARTED -->
+3. Choose between encryption and decryption options based on your requirements.
 
-## Usage
+4. Follow the on-screen instructions to select the encryption method and provide the necessary keys or files.
 
-### Auto-Start
+5. Securely eject the Raspberry Pi from your computer when done.
 
-Upon connecting the Raspberry Pi to a computer, `MainGUI.py` will automatically start, providing a seamless and user-friendly experience.
+## How to Use the Project
 
-### Encrypt Files
+### Encryption
 
-1. Choose to encrypt files for:
-   - Group Sharing (Symmetric Encryption): Select a file, choose the encryption method, and the destination directory on the connected hard drive.
-   - Individual Sharing (Asymmetric Encryption): Select a file, provide the recipient's public key, and choose the destination directory.
+1. Insert the Raspberry Pi into your computer.
 
-### Decrypt Files
+2. Run the MainGUI.py script to initiate the GUI.
 
-1. Select the encrypted file and choose the decryption method:
-   - Symmetric Encryption: Enter the encryption key and select the destination directory.
-   - Asymmetric Encryption: Choose your private key file and the destination directory.
+3. Select the "Encrypt" option.
 
-### Hardware Integration
+4. Choose whether to share with a group (Symmetric Encryption) or an individual (Asymmetric Encryption).
 
-- Connect the external hard drive to the Raspberry Pi.
-- Configure the Raspberry Pi to recognize and mount the hard drive when connected.
-- Implement logic in the scripts to handle file encryption, decryption, and data transfer to/from the hard drive.
+5. Follow the on-screen instructions to complete the encryption process.
 
-<!-- USER DOCUMENTATION -->
+6. Safely eject the Raspberry Pi when the process is complete.
 
-## User Documentation
+### Decryption
 
-For detailed instructions on using the "Secure Data Encryption and Transfer Device," please refer to the user documentation provided with the project. It includes step-by-step guides, troubleshooting tips, and contact information for support.
+1. Insert the Raspberry Pi into your computer.
 
-<!-- TESTING AND FEEDBACK -->
+2. Run the MainGUI.py script to initiate the GUI.
 
-## Testing and Feedback
+3. Select the "Decrypt" option.
 
-We have extensively tested the SecureDataTransfer project to ensure the security and usability of the solution. However, user feedback is valuable for further improvements. Please feel free to provide feedback and report any issues in the project's repository.
+4. Choose the encryption method used for the encrypted file (Symmetric or Asymmetric).
 
-<!-- LICENSE -->
+5. Provide the decryption key or private key as required.
+
+6. Select a directory for saving the decrypted file.
+
+7. Safely eject the Raspberry Pi when the process is complete.
+
+## Credits
+
+- [Your Name](https://github.com/your-github-profile) - Project Lead and Developer
+- [Collaborator Name](https://github.com/collaborator-github-profile) - Collaborator and Developer
+
+Special thanks to [Author Name](https://github.com/author-github-profile) for the [tutorial/reference material](https://github.com/author-github-profile/tutorial-link) used in this project.
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
-
-<!-- CONTACT -->
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-- [MIT License]([https://choosealicense.com](https://spdx.org/licenses/MIT.html))
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
+This project is licensed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/). You are free to modify and use this code for both personal and commercial purposes, but you must include this license in your derivative work.
