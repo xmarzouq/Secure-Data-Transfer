@@ -5,26 +5,25 @@
   <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
 </p>
 
-<h2 align="left">Content Table</h2>
+<h2 align="left">Content Table 📑</h2>
 
-
-  - [Project Overview](#project-overview)
+- [Project Overview](#project-overview)
     - [Software Components](#software-components)
     - [Hardware Components](#hardware-components)
-  - [Usage](#usage)
+- [Usage](#usage)
     - [Auto-Start](#auto-start)
     - [Encrypting Files](#encrypting-files)
     - [Decrypting Files](#decrypting-files)
     - [Hardware Integration](#hardware-integration)
-  - [User Documentation](#user-documentation)
-  - [Testing and Feedback](#testing-and-feedback)
-  - [License](#license)
-  - [Credits](#credits)
-  - [Badges](#badges)
-  - [How to Contribute](#how-to-contribute)
+- [User Documentation](#user-documentation)
+- [Testing and Feedback](#testing-and-feedback)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Credits](#credits)
+- [Contributions](#contributions)
 
 <!-- Project Description -->
-<h2 align="center">Project Overview</h2>
+<h2 align="center">Project Overview 🚀</h2>
 
 <p align="center">
   <em>Protecting Sensitive Data Made Simple.</em>
@@ -32,12 +31,11 @@
 
 The **Secure Data Transfer Device** seamlessly combines hardware and software components to create a robust solution for safeguarding and sharing sensitive information.
 
----
 <!-- Components Section -->
 <h2 align="center">📦 Software & Hardware Components</h2>
 
 <p align="center">
-  <em>Explore the Core Components</strong>
+  <em>Explore the Core Components 🧩</strong>
 </p>
 
 <p align="center">
@@ -46,7 +44,7 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 </p>
 
 <!-- Software Components Section -->
-<h4 align="left" id="software-components">Software Components</h4>
+<h4 align="left" id="software-components">Software Components 📂</h4>
 
 - **`MainGUI.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
 
@@ -59,15 +57,14 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 - **`Decrypt.py`**: Facilitates file decryption, supporting both symmetric and asymmetric encryption.
 
 <!-- Hardware Components Section -->
-<h4 align="left" id="hardware-components">Hardware Components</h4>
+<h4 align="left" id="hardware-components">Hardware Components 🧰</h4>
 
 - **_Raspberry Pi:_** The invisible guardian between your computer and an external hard drive, fortifying data security.
 
 - **_External Hard Drive:_** A secure vault for your encrypted files, ensuring data remains protected, even if the drive is misplaced.
 
----
 <!-- Usage Section -->
-<h2 align="center">Usage</h2>
+<h2 align="center">Usage 📋</h2>
 
 <p align="center">
   <em>Your Data, Your Control.</em>
@@ -100,9 +97,8 @@ To decrypt files:
 
 - **Asymmetric Encryption:** Pick your private key file and the destination directory.
 
----
 <!-- Hardware Integration Section -->
-<h2 align="center">Hardware Integration</h2>
+<h2 align="center">Hardware Integration 🔌</h2>
 
 <p align="center">
   <em>Seamless, Yet Robust.</em>
@@ -115,7 +111,7 @@ To decrypt files:
 3. Connect the Raspberry Pi to the computer  handle file encryption, decryption, and data transfer to/from the hard drive.
 
 <!-- User Documentation Section -->
-<h2 align="center">User Documentation</h2>
+<h2 align="center">User Documentation 📖</h2>
 
 <p align="center">
   <em>Guides, Tips, and Support.</em>
@@ -124,7 +120,7 @@ To decrypt files:
 For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
 
 <!-- Testing and Feedback Section -->
-<h2 align="center">Testing and Feedback</h2>
+<h2 align="center">Testing and Feedback 🧪</h2>
 
 <p align="center">
   <em>We Value Your Input.</em>
@@ -133,7 +129,7 @@ For comprehensive instructions on using the "Secure Data Transfer Device," pleas
 The Secure Data Transfer Device project has undergone extensive testing to ensure both security and usability. However, user feedback is invaluable for further enhancements. Please feel free to provide feedback and report any issues in the project's repository.
 
 <!-- Dependencies Section -->
-<h2 align="center">Dependencies</h2>
+<h2 align="center">Dependencies 🛠️</h2>
 
 <p align="center">
   <em>The Building Blocks.</em>
@@ -152,25 +148,25 @@ This project relies on the following dependencies:
 Please ensure that these dependencies are installed and configured correctly to run the Secure Data Transfer Device.
 
 <!-- License Section -->
-<h2 align="center">License</h2>
+<h2 align="center">License 📜</h2>
 
 <p align="center">
   <em>Open Source and Free to Use.</em>
 </p>
 
-This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details
+This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details.
 
 <!-- Credits Section -->
-<h2 align="center">Credits</h2>
+<h2 align="center">Credits 🙌</h2>
 
 <p align="center">
   <em>Thanks to Our Contributors.</em>
 </p>
 
-This project was developed by a dedicated senior students group, and it benefited from the valuable insights and contributions of the university researchers. We extend our gratitude to all those who have supported this project.
+This project was developed by a dedicated senior student group, and it benefited from the valuable insights and contributions of the university researchers. We extend our gratitude to all those who have supported this project.
 
-<!-- Badges and Contributions Section -->
-<h2 align="center">Contributions</h2>
+<!-- Contributions Section -->
+<h2 align="center">Contributions 🤝</h2>
 
 <p align="center">
   <em>Join Us and Make a Difference.</em>
