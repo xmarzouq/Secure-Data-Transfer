@@ -144,10 +144,10 @@ This project is open-source and released under the [Apache 2.0](https://www.apac
   <em>Thanks to Our Contributors.</em>
 </p>
 
-This project was developed by **_Marzouq_**, and it benefited from the valuable insights and contributions of the open-source community. We extend our gratitude to all those who have supported this project.
+This project was developed by a dedicated senior students group, and it benefited from the valuable insights and contributions of the university researchers. We extend our gratitude to all those who have supported this project.
 
 <!-- Badges and Contributions Section -->
-<h2 align="center">🛡️ Badges & Contributions</h2>
+<h2 align="center">Contributions</h2>
 
 <p align="center">
   <em>Join Us and Make a Difference.</em>
