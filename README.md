@@ -1,124 +1,106 @@
 # Secure Data Transfer Device
 
-## Project Overview
-
-The "Secure Data Transfer Device" is designed to provide a secure and user-friendly solution for encrypting, transferring, and decrypting data while maintaining data privacy and security. This project utilizes a Raspberry Pi as a core hardware component, acting as an invisible intermediary between the user's computer and an external hard drive. It ensures data security and enables users to interact seamlessly with the device.
+**_Secure Data Transfer Device_** is a Raspberry Pi-based solution designed to provide secure and user-friendly data encryption and transfer capabilities. This project combines both hardware and software components to create a seamless and robust solution for protecting and sharing sensitive data.
 
 ## Table of Contents
 
-1. [Software Components](#software-components)
-2. [Hardware Components](#hardware-components)
-3. [User Interaction](#user-interaction)
-4. [User Documentation](#user-documentation)
-5. [Testing and Feedback](#testing-and-feedback)
+- [Project Overview:](#project-overview)
+  - [Software Components](#software-components)
+  - [Hardware Components](#hardware-components)
+- [Usage:](#usage)
+  - [Auto-Start](#auto-start)
+  - [Encrypting Files](#encrypting-files)
+  - [Decrypting Files](#decrypting-files)
+  - [Hardware Integration](#hardware-integration)
+- [User Documentation](#user-documentation)
+- [Testing and Feedback](#testing-and-feedback)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Credits](#credits)
+- [Badges](#badges)
+- [How to Contribute](#how-to-contribute)
 
-## Software Components
+## Project Overview
 
-### MainGUI.py
+The Secure Data Transfer Device consists of the following key components:
 
-- **Purpose:** The main graphical user interface (GUI) serves as the entry point for the user.
-- **Functionality:**
-  - Allows the user to choose between encrypting and decrypting files.
-  - Initiates the appropriate encryption or decryption process based on user selection.
-  - Hides the presence of the Raspberry Pi, ensuring a seamless user experience.
+### Software Components:
 
-### Secure_Data_Transfer.py
+1. **`MainGUI.py`:** This is the main graphical user interface (GUI) for the project. It offers users the choice to either encrypt or decrypt files.
 
-- **Purpose:** Acts as a central control script that manages data encryption, transfer, and decryption.
-- **Functionality:**
-  - Coordinates the selection of encryption methods (symmetric or asymmetric) based on user input.
-  - Ensures that data is securely encrypted before transferring it to an external hard drive.
-  - Interacts with SymmetricEncryptAES.py, AsymmetricRSAEncrypt.py, and Decrypt.py as needed.
+2. **`Secure_Data_Transfer.py`:** This component manages the overall workflow, guiding users through the process of selecting files, encryption methods, and destination directories.
 
-### SymmetricEncryptAES.py
+3. **`SymmetricEncryptAES.py`:** Responsible for handling symmetric encryption, particularly for group sharing scenarios, using the Advanced Encryption Standard (AES) algorithm.
 
-- **Purpose:** Handles symmetric encryption for group-based file sharing.
-- **Functionality:**
-  - Prompts the user to choose a file for encryption.
-  - Accepts an encryption key from the user.
-  - Encrypts the file using the AES algorithm.
-  - Allows the user to select a directory on an external hard drive for storing the encrypted file.
+4. **`AsymmetricRSAEncrypt.py`:** Manages asymmetric encryption for individual sharing, using RSA encryption with public keys to ensure secure data transfer.
 
-### AsymmetricRSAEncrypt.py
+5. **`Decrypt.py`:** Allows users to decrypt files, supporting both symmetric and asymmetric encryption methods.
 
-- **Purpose:** Manages asymmetric encryption for individual file sharing.
-- **Functionality:**
-  - Prompts the user to select a recipient's public key file.
-  - Encrypts the selected file using the recipient's public key.
-  - Allows the user to choose a directory on an external hard drive for storing the encrypted file.
+### Hardware Components:
 
-### Decrypt.py
+- **_Raspberry Pi:_** The core hardware component acts as an invisible intermediary between the user's computer and an external hard drive, enhancing data security.
 
-- **Purpose:** Handles file decryption based on the selected encryption method.
-- **Functionality:**
-  - Determines the encryption method used for the encrypted file (symmetric or asymmetric) based on user input.
-  - Decrypts the file using the appropriate decryption key or private key.
-  - Allows the user to choose a directory for saving the decrypted file.
+- **_External Hard Drive:_** This hard drive is used to securely store encrypted files, ensuring that sensitive data remains protected even if the drive is lost or stolen.
 
-## Hardware Components
+## Usage
 
-### Raspberry Pi
+### Auto-Start
 
-- **Role:** The core hardware component that acts as an invisible intermediary.
-- **Functionality:**
-  - Recognizes the external hard drive.
-  - Executes the software scripts.
-  - Ensures data encryption before writing to the hard drive.
-  - Provides an additional layer of security for data storage and transfer.
+Upon connecting the Raspberry Pi to a computer, the `MainGUI.py` application will automatically launch, providing a seamless and user-friendly experience.
 
-### External Hard Drive
+### Encrypting Files
 
-- **Role:** The storage medium for encrypted files.
-- **Functionality:**
-  - Connects to the Raspberry Pi.
-  - Receives encrypted files for storage.
-  - Safely stores encrypted data.
+Users can choose to encrypt files for:
 
-## User Interaction
+- **Group Sharing (Symmetric Encryption):** Select a file, choose the encryption method, and specify the destination directory on the connected hard drive.
 
-**Encryption:**
+- **Individual Sharing (Asymmetric Encryption):** Select a file, provide the recipient's public key, and choose the destination directory.
 
-1. User inserts the Raspberry Pi into their computer.
-2. MainGUI.py is automatically initiated, displaying the GUI.
-3. User selects the "Encrypt" option.
-4. Secure_Data_Transfer.py coordinates the process.
-5. User decides whether to share with a group (Symmetric Encryption) or an individual (Asymmetric Encryption).
+### Decrypting Files
 
-**Decryption:**
+To decrypt files, follow these steps:
 
-1. User inserts the Raspberry Pi into their computer.
-2. MainGUI.py is automatically initiated, displaying the GUI.
-3. User selects the "Decrypt" option.
-4. Secure_Data_Transfer.py coordinates the process.
-5. User specifies the encryption method (Symmetric or Asymmetric) used for the encrypted file.
-6. User provides the decryption key or private key, depending on the method chosen.
+- **Symmetric Encryption:** Enter the encryption key and specify the destination directory.
 
-**Security and Transparency:**
+- **Asymmetric Encryption:** Choose your private key file and the destination directory.
 
-- The Raspberry Pi remains hidden from the user's view during interaction.
-- All encryption and decryption processes are transparent to the user through the GUI.
-- Data remains secure even if the external hard drive is lost or stolen.
+### Hardware Integration
+
+1. Connect the external hard drive to the Raspberry Pi.
+
+2. Configure the Raspberry Pi to recognize and automatically mount the hard drive when connected.
+
+3. Implement logic within the scripts to handle file encryption, decryption, and data transfer to/from the hard drive.
 
 ## User Documentation
 
-**Detailed User Guide:**
-
-- Explains how to use the "Secure Data Transfer Device."
-- Provides step-by-step instructions on inserting the Raspberry Pi, interacting with the GUI, and securely ejecting the device.
-- Includes troubleshooting steps and support contact information.
+For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
 
 ## Testing and Feedback
 
-**Testing:**
+The Secure Data Transfer Device project has undergone extensive testing to ensure both security and usability. However, user feedback is invaluable for further enhancements. Please feel free to provide feedback and report any issues in the project's repository.
 
-- Thoroughly tests the entire workflow, including encryption, decryption, and data transfer.
-- Ensures that security measures work as intended.
+## Dependencies
 
-**User Feedback:**
+This project relies on the following dependencies:
 
-- Gathers user feedback to identify areas for improvement.
-- Makes necessary adjustments and refinements to the software and hardware components based on testing and user feedback.
+- [Python](https://www.python.org/): The primary programming language used for scripting and development.
+- [PyQt5](https://pypi.org/project/PyQt5/): A Python binding for the Qt application framework, used for creating the graphical user interface (GUI).
+- [Crypto](https://pypi.org/project/pycryptodome/): A cryptographic library for Python, providing support for encryption and decryption operations.
+- [Raspberry Pi OS](https://www.raspberrypi.org/software/): The operating system for the Raspberry Pi, which serves as the core hardware component.
+
+Please ensure that these dependencies are installed and configured correctly to run the Secure Data Transfer Device.
 
 ## License
 
-This project is licensed under the [MIT LICENSE] - see the [LICENSE.md](LICENSE) file for details.
+This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details
+
+## Credits
+
+This project was developed by **_Marzouq_**, and it benefited from the valuable insights and contributions of the open-source community. We extend our gratitude to all those who have supported this project.
+
+## Badges
+
+## How to Contribute
+
+If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
