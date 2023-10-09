@@ -4,6 +4,23 @@
 <p align="center">
   <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
 </p>
+# Table of Contents
+
+- [Secure Data Transfer Device](#secure-data-transfer-device)
+  - [Project Overview](#project-overview)
+    - [Software Components](#software-components)
+    - [Hardware Components](#hardware-components)
+  - [Usage](#usage)
+    - [Auto-Start](#auto-start)
+    - [Encrypting Files](#encrypting-files)
+    - [Decrypting Files](#decrypting-files)
+    - [Hardware Integration](#hardware-integration)
+  - [User Documentation](#user-documentation)
+  - [Testing and Feedback](#testing-and-feedback)
+  - [License](#license)
+  - [Credits](#credits)
+  - [Badges](#badges)
+  - [How to Contribute](#how-to-contribute)
 
 <!-- Project Description -->
 <h2 align="center">Project Overview</h2>
@@ -21,7 +38,7 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
   <strong>Explore the Core Components</strong>
 </p>
 
-<p align="center">
+<p align="left">
   <a href="#software-components">Software Components</a> |
   <a href="#hardware-components">Hardware Components</a>
 </p>
