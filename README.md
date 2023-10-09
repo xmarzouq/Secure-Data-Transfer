@@ -22,8 +22,8 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 </p>
 
 <p align="center">
-  <a href="#software-components">Software Components</a> |
-  <a href="#hardware-components">Hardware Components</a>
+  <a href="#📦-software-components">Software Components</a> |
+  <a href="#💾-hardware-components">Hardware Components</a>
 </p>
 
 ### 📦 Software Components
