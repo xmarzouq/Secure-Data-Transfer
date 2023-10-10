@@ -2,7 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="secureDataTransfer",
-    version="0.1.0",
+    version="0.1.1",
+    description="The 'Secure Data Transfer'  seamlessly is a robust solution for safeguarding and sharing sensitive information.",
     packages=find_packages(),
     install_requires=[
         "pycryptodome>=3.10.1",
