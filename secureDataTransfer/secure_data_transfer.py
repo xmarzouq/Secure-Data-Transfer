@@ -1,5 +1,6 @@
 import sys
 import os
+import platform
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QFileDialog, QVBoxLayout, QWidget, QDesktopWidget, QComboBox
 from PyQt5.QtCore import Qt
 import subprocess
@@ -69,9 +70,12 @@ class SecureDataTransferApp(QMainWindow):
         script_path = pkg_resources.resource_filename(
             'secureDataTransfer', 'symmetricEncryptAES.py')
 
+        # Determine the appropriate Python interpreter to use
+        python_executable = 'python' if platform.system() == 'Windows' else 'python3'
+
         # Call symmetricEncryptAES.py with the selected file path
         result = subprocess.run(
-            ['python3', script_path, file_path], stdout=subprocess.PIPE)
+            [python_executable, script_path, file_path], stdout=subprocess.PIPE)
 
         if result.returncode == 0:
             # Display a message to indicate successful encryption
@@ -86,9 +90,12 @@ class SecureDataTransferApp(QMainWindow):
         script_path = pkg_resources.resource_filename(
             'secureDataTransfer', 'asymmetricRSAEncrypt.py')
 
+        # Determine the appropriate Python interpreter to use
+        python_executable = 'python' if platform.system() == 'Windows' else 'python3'
+
         # Call asymmetricRSAEncrypt.py with the selected file path
         result = subprocess.run(
-            ['python3', script_path, file_path], stdout=subprocess.PIPE)
+            [python_executable, script_path, file_path], stdout=subprocess.PIPE)
 
         if result.returncode == 0:
             # Display a message to indicate successful encryption
