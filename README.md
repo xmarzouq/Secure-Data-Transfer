@@ -13,28 +13,26 @@
 <h2 align="left">Content Table 📑</h2>
 
 <ul>
-  <li><a href="#project-overview">Project Overview</a>
+  <li><a href="#project-overview-">Project Overview</a>
     <ul>
-      <li><a href="#software-components">Software Components</a></li>
-      <li><a href="#hardware-components">Hardware Components</a></li>
+      <li><a href="#software-components-">Software Components</a></li>
+      <li><a href="#hardware-components-">Hardware Components</a></li>
     </ul>
   </li>
-  <li><a href="#usage">Usage</a>
+  <li><a href="#usage-">Usage</a>
     <ul>
       <li><a href="#auto-start">Auto-Start</a></li>
-      <li><a href="#encrypting-files">Encrypting Files</a></li>
-      <li><a href="#decrypting-files">Decrypting Files</a></li>
-      <li><a href="#hardware-integration">Hardware Integration</a></li>
-      <li><a href="#alternative-usage">Alternative Usage</a></li>
+      <li><a href="#encrypting-files-">Encrypting Files</a></li>
+      <li><a href="#decrypting-files-">Decrypting Files</a></li>
+      <li><a href="#hardware-integration-">Hardware Integration</a></li>
+      <li><a href="#alternative-usage-">Alternative Usage</a></li>
     </ul>
   </li>
-  <li><a href="#user-documentation">User Documentation</a></li>
-  <li><a href="#testing-and-feedback">Testing and Feedback</a></li>
-  <li><a href="#dependencies">Dependencies</a></li>
-  <li><a href="#license">License</a></li>
-  <li><a href="#credits">Credits</a></li>
-  <li><a href="#contributions">Contributions</a></li>
-  <li><a href="#made-with-love">Made with ❤️</a></li>
+  <li><a href="#user-documentation-">User Documentation</a></li>
+  <li><a href="#testing-and-feedback-">Testing and Feedback</a></li>
+  <li><a href="#dependencies-%EF%B8%8F">Dependencies</a></li>
+  <li><a href="#license-">License</a></li>
+  <li><a href="#contributions-">Contributions</a></li>
 </ul>
 
 <!-- Project Description -->
@@ -147,6 +145,7 @@ pip install --upgrade pip
 <ol start="3">
   <li>Run the package.</li>
 </ol>
+
    ```bash
    secure-data-transfer
    ```
