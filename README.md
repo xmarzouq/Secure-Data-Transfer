@@ -200,3 +200,24 @@ This project was developed by a dedicated senior student group, and it benefited
 </p>
 
 If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
+
+
+<!-- Made with Love Section -->
+<hr>
+<h2 align="center">Made with ❤️</h2>
+
+<p align="center">
+  <em>This Project Was Crafted with Passion and Dedication.</em>
+</p>
+
+<p align="center">
+  <img src="https://placekitten.com/200/200" alt="Heart Icon">
+</p>
+
+<p align="center">
+  We poured our hearts and countless hours into creating the Secure Data Transfer Device. Our team of dedicated senior students and university researchers worked tirelessly to ensure that your data remains secure and your user experience is seamless.
+</p>
+
+<p align="center">
+  We hope this project brings you value and simplifies the way you protect and share sensitive information. Your support and feedback mean the world to us.
+</p>
