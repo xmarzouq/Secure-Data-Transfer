@@ -157,21 +157,18 @@ pip install --upgrade pip
   <em>Guides, Tips, and Support.</em>
 </p>
 For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
-
 <!-- Testing and Feedback Section -->
 <h2 align="center" id="testing-and-feedback">Testing and Feedback 🧪</h2>
 <p align="center">
   <em>We Value Your Input.</em>
 </p>
 The Secure Data Transfer Device project has undergone extensive testing to ensure both security and usability. However, user feedback is invaluable for further enhancements. Please feel free to provide feedback and report any issues in the project's repository.
-
 <!-- Dependencies Section -->
 <h2 align="center" id="dependencies">Dependencies 🛠️</h2>
 <p align="center">
   <em>The Building Blocks.</em>
 </p>
 This project relies on the following dependencies:
-
 
 - [Python](https://www.python.org/): The primary programming language used for scripting and development.
 
@@ -192,7 +189,6 @@ pip install -r requirements.txt
 <p align="center">
   <em>Open Source and Free to Use.</em>
 </p>
-
 This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details.
 
 <!-- Contributions Section -->
