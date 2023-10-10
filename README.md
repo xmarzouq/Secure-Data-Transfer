@@ -194,7 +194,6 @@ If you would like to contribute to this project, please review our [Contribution
 
 
 <!-- Made with Love Section -->
-<hr style="border: none; height: 0.5px; background-color: #ccc;">
 <h2 align="center">Made with ❤️</h2>
 
 <p align="center">
