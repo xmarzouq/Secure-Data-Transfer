@@ -200,4 +200,3 @@ This project was developed by a dedicated senior student group, and it benefited
 </p>
 
 If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
-```
