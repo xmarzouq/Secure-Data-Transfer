@@ -183,15 +183,6 @@ pip install -r requirements.txt
 
 This project is open-source and released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) - check the [License](LICENSE) file for more details.
 
-<!-- Credits Section -->
-<h2 align="center">Credits 🙌</h2>
-
-<p align="center">
-  <em>Thanks to Our Contributors.</em>
-</p>
-
-This project was developed by a dedicated senior student group, and it benefited from the valuable insights and contributions of the university researchers. We extend our gratitude to all those who have supported this project.
-
 <!-- Contributions Section -->
 <h2 align="center">Contributions 🤝</h2>
 
@@ -208,10 +199,6 @@ If you would like to contribute to this project, please review our [Contribution
 
 <p align="center">
   <em>This Project Was Crafted with Passion and Dedication.</em>
-</p>
-
-<p align="center">
-  <img src="https://placekitten.com/200/200" alt="Heart Icon">
 </p>
 
 <p align="center">
