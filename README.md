@@ -19,6 +19,7 @@
   - [Encrypting Files](#encrypting-files)
   - [Decrypting Files](#decrypting-files)
   - [Hardware Integration](#hardware-integration)
+  - [Alternative Usage](#alternative-usage)
 - [User Documentation](#user-documentation)
 - [Testing and Feedback](#testing-and-feedback)
 - [Dependencies](#dependencies)
