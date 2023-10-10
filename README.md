@@ -4,6 +4,7 @@
 <p align="center">
   <strong>A Raspberry Pi-based solution for secure and user-friendly data encryption and transfer.</strong>
 </p>
+![Project Overview]([URL](https://i.ibb.co/FKk2kQN/19f17e75-14ef-459a-a15d-481419ea99af-2023-10-03-07-40-05.jpg))
 
 <h2 align="left">Content Table 📑</h2>
 
