@@ -22,8 +22,8 @@
   <li><a href="#usage-">Usage</a>
     <ul>
       <li><a href="#auto-start">Auto-Start</a></li>
-      <li><a href="#encrypting-files-">Encrypting Files</a></li>
-      <li><a href="#decrypting-files-">Decrypting Files</a></li>
+      <li><a href="#encrypting-files">Encrypting Files</a></li>
+      <li><a href="#decrypting-files">Decrypting Files</a></li>
       <li><a href="#hardware-integration-">Hardware Integration</a></li>
       <li><a href="#alternative-usage-">Alternative Usage</a></li>
     </ul>
