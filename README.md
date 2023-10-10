@@ -194,7 +194,7 @@ If you would like to contribute to this project, please review our [Contribution
 
 
 <!-- Made with Love Section -->
-<hr>
+<h4>
 <h2 align="center">Made with ❤️</h2>
 
 <p align="center">
