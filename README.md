@@ -114,6 +114,25 @@ To decrypt files:
 
 3. Connect the Raspberry Pi to the computer handle file encryption, decryption, and data transfer to/from the hard drive.
 
+<h2 align="center">Alternative Usage 📋</h2>
+
+To use the Secure Data Transfer Software on another hardware, follow these steps:
+
+1. Upgrade pip to the latest version:
+
+   ```bash
+   pip install --upgrade pip
+   ```
+2. Install the Secure Data Transfer package:
+
+   ```bash
+   pip install secureDataTransfer
+   ```
+3. run the package.
+   ```bash
+   secure-data-transfer
+   ```
+
 <!-- User Documentation Section -->
 <h2 align="center">User Documentation 📖</h2>
 
