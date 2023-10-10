@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QDesktopWidget
 from PyQt5.QtCore import Qt
 import subprocess
+import pkg_resources  # Import pkg_resources
 
 
 class SecureFileTransferApp(QMainWindow):
@@ -38,13 +39,20 @@ class SecureFileTransferApp(QMainWindow):
         self.move(x, y)
 
     def encryptFiles(self):
-        # Run the secure_data_transfer.py script for file encryption
+        # Use pkg_resources to locate secure_data_transfer.py in the installed package
+        script_path = pkg_resources.resource_filename(
+            'secureDataTransfer', 'secure_data_transfer.py')
 
-        subprocess.run(['python', './scripts/secure_data_transfer.py'])
+        # Run the secure_data_transfer.py script for file encryption
+        subprocess.run(['python3', script_path])
 
     def decryptFiles(self):
-        # Run the symmetricDecryptAES.py script for file decryption
-        subprocess.run(['python', './scripts/decrypt.py'])
+        # Use pkg_resources to locate decrypt.py in the installed package
+        script_path = pkg_resources.resource_filename(
+            'secureDataTransfer', 'decrypt.py')
+
+        # Run the decrypt.py script for file decryption
+        subprocess.run(['python3', script_path])
 
 
 def main():

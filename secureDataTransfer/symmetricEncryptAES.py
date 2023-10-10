@@ -4,6 +4,7 @@ import random
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 from PyQt5.QtWidgets import QApplication, QFileDialog, QPushButton, QVBoxLayout, QWidget, QDesktopWidget, QLabel, QMessageBox
+import pkg_resources  # Import pkg_resources
 
 
 class SymmetricEncryptionApp(QWidget):
@@ -28,10 +29,6 @@ class SymmetricEncryptionApp(QWidget):
         encrypt_button = QPushButton('Encrypt', self)
         layout.addWidget(encrypt_button)
         encrypt_button.clicked.connect(self.encryptFile)
-
-        # copy_key_button = QPushButton('Copy Encryption Key', self)
-        # layout.addWidget(copy_key_button)
-        # copy_key_button.clicked.connect(self.copyEncryptionKey)
 
         self.encryption_key = None
         self.selected_directory = None
@@ -89,6 +86,10 @@ class SymmetricEncryptionApp(QWidget):
 
 def main():
     app = QApplication(sys.argv)
+
+    # Use pkg_resources to locate the script path within the package
+    script_path = pkg_resources.resource_filename(
+        'secureDataTransfer', 'SymmetricEncryptAES.py')
 
     file_path = sys.argv[1]
     window = SymmetricEncryptionApp(file_path)

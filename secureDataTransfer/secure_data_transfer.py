@@ -3,6 +3,7 @@ import os
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QFileDialog, QVBoxLayout, QWidget, QDesktopWidget, QComboBox
 from PyQt5.QtCore import Qt
 import subprocess
+import pkg_resources  # Import pkg_resources
 
 
 class SecureDataTransferApp(QMainWindow):
@@ -57,8 +58,6 @@ class SecureDataTransferApp(QMainWindow):
             if selected_method_id == 1:
                 # Implement asymmetric encryption logic using self.selected_file
                 self.performAsymmetricEncryption(self.selected_file)
-
-                pass
             elif selected_method_id == 2:
                 # Implement symmetric encryption logic using self.selected_file
                 self.performSymmetricEncryption(self.selected_file)
@@ -66,9 +65,13 @@ class SecureDataTransferApp(QMainWindow):
             self.label.setText("No file selected for encryption and transfer")
 
     def performSymmetricEncryption(self, file_path):
+        # Use pkg_resources to locate symmetricEncryptAES.py in the installed package
+        script_path = pkg_resources.resource_filename(
+            'secureDataTransfer', 'symmetricEncryptAES.py')
+
         # Call symmetricEncryptAES.py with the selected file path
         result = subprocess.run(
-            ['python', './scripts/symmetricEncryptAES.py', file_path], stdout=subprocess.PIPE)
+            ['python3', script_path, file_path], stdout=subprocess.PIPE)
 
         if result.returncode == 0:
             # Display a message to indicate successful encryption
@@ -79,9 +82,13 @@ class SecureDataTransferApp(QMainWindow):
             self.label.setText("Error occurred during encryption")
 
     def performAsymmetricEncryption(self, file_path):
+        # Use pkg_resources to locate asymmetricRSAEncrypt.py in the installed package
+        script_path = pkg_resources.resource_filename(
+            'secureDataTransfer', 'asymmetricRSAEncrypt.py')
+
         # Call asymmetricRSAEncrypt.py with the selected file path
         result = subprocess.run(
-            ['python', './scripts/asymmetricRSAEncrypt.py', file_path], stdout=subprocess.PIPE)
+            ['python3', script_path, file_path], stdout=subprocess.PIPE)
 
         if result.returncode == 0:
             # Display a message to indicate successful encryption
