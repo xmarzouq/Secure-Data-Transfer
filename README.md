@@ -135,27 +135,29 @@ To use the Secure Data Transfer Software on another hardware, follow these steps
 ```bash
 pip install --upgrade pip
 ```
+
 <ol start="2">
   <li>Install the Secure Data Transfer package:</li>
 </ol>
 
-   ```bash
-   pip install secureDataTransfer
-   ```
+```bash
+pip install secureDataTransfer
+```
+
 <ol start="3">
   <li>Run the package.</li>
 </ol>
 
-   ```bash
-   secure-data-transfer
-   ```
+```bash
+secure-data-transfer
+```
 
 <!-- User Documentation Section -->
 <h2 align="center" id="user-documentation">User Documentation 📖</h2>
 <p align="center">
   <em>Guides, Tips, and Support.</em>
 </p>
-For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
+  For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
 <!-- Testing and Feedback Section -->
 <h2 align="center" id="testing-and-feedback">Testing and Feedback 🧪</h2>
 <p align="center">
@@ -198,7 +200,6 @@ This project is open-source and released under the [Apache 2.0](https://www.apac
 </p>
 
 If you would like to contribute to this project, please review our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on creating issues, suggesting new features, and submitting pull requests.
-
 
 <!-- Made with Love Section -->
 <h2 align="center" id="made-with-love">Made with ❤️</h2>
