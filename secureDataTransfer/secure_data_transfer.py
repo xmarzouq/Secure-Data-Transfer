@@ -4,7 +4,6 @@ import platform
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QFileDialog, QVBoxLayout, QWidget, QDesktopWidget, QComboBox
 from PyQt5.QtCore import Qt
 import subprocess
-import pkg_resources  # Import pkg_resources
 
 
 class SecureDataTransferApp(QMainWindow):
@@ -67,8 +66,9 @@ class SecureDataTransferApp(QMainWindow):
 
     def performSymmetricEncryption(self, file_path):
         # Use pkg_resources to locate symmetricEncryptAES.py in the installed package
-        script_path = pkg_resources.resource_filename(
-            'secureDataTransfer', 'symmetricEncryptAES.py')
+        # script_path = pkg_resources.resource_filename(
+        #     'secureDataTransfer', 'symmetricEncryptAES.py')
+        script_path = os.path.join(os.path.dirname(__file__), 'symmetricEncryptAES.py')
 
         # Determine the appropriate Python interpreter to use
         python_executable = 'python' if platform.system() == 'Windows' else 'python3'
@@ -87,8 +87,9 @@ class SecureDataTransferApp(QMainWindow):
 
     def performAsymmetricEncryption(self, file_path):
         # Use pkg_resources to locate asymmetricRSAEncrypt.py in the installed package
-        script_path = pkg_resources.resource_filename(
-            'secureDataTransfer', 'asymmetricRSAEncrypt.py')
+        # script_path = pkg_resources.resource_filename(
+        #     'secureDataTransfer', 'asymmetricRSAEncrypt.py')
+        script_path = os.path.join(os.path.dirname(__file__), 'asymmetricRSAEncrypt.py')
 
         # Determine the appropriate Python interpreter to use
         python_executable = 'python' if platform.system() == 'Windows' else 'python3'

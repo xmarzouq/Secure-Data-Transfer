@@ -157,7 +157,7 @@ secure-data-transfer
 <p align="center">
   <em>Guides, Tips, and Support.</em>
 </p>
-  For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
+For comprehensive instructions on using the "Secure Data Transfer Device," please refer to the user documentation provided with the project. This documentation includes step-by-step guides, troubleshooting tips, and contact information for support.
 <!-- Testing and Feedback Section -->
 <h2 align="center" id="testing-and-feedback">Testing and Feedback 🧪</h2>
 <p align="center">
