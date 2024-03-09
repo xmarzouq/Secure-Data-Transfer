@@ -88,8 +88,8 @@ def main():
     app = QApplication(sys.argv)
 
     # Use pkg_resources to locate the script path within the package
-    script_path = pkg_resources.resource_filename(
-        'secureDataTransfer', 'SymmetricEncryptAES.py')
+    # script_path = pkg_resources.resource_filename(
+    #     'secureDataTransfer', 'SymmetricEncryptAES.py')
 
     file_path = sys.argv[1]
     window = SymmetricEncryptionApp(file_path)
