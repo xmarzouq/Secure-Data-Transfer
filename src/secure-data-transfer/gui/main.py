@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import (
     QMessageBox,
     QDesktopWidget,
 )
+import sys
 from gui.encryption_gui import EncryptionDialog
 from gui.decryption_gui import DecryptionDialog
 
