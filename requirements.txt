@@ -1,5 +1,5 @@
-PyQt5==5.15.4
-PyCryptodome==3.6.6
+PyCryptodome
+PyQt5
 setuptools
 wheel
 twine

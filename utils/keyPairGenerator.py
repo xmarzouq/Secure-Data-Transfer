@@ -2,7 +2,7 @@ from Crypto.PublicKey import RSA
 import os
 
 # Specify the directory where you want to save the keys
-key_dir = 'keys/'
+key_dir = 'assets/keys/'
 
 # Create the "keys" directory if it doesn't exist
 if not os.path.exists(key_dir):

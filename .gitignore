@@ -401,7 +401,7 @@ FodyWeavers.xsd
 #Project-based
 MANIFEST.in
 venv/
-keys/
+*/keys/private/
 # utils/
 .vscode/
 # .gitignore
@@ -415,3 +415,4 @@ runner.sh
 setup.py
 TODO.todo
 .env
+.venv/
