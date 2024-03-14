@@ -11,9 +11,9 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 import time
-from encryption.symmetric import encrypt_aes
-from encryption.asymmetric import encrypt_rsa
-from utils import file_operations as fo
+from ..encryption.symmetric import encrypt_aes
+from ..encryption.asymmetric import encrypt_rsa
+from ..utils import file_operations as fo
 from PyQt5.QtCore import QObject, pyqtSignal, QThread
 
 

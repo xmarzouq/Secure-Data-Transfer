@@ -1,6 +1,6 @@
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
-from utils.file_operations import read_file, write_file, get_decrypted_file_path
+from ..utils.file_operations import read_file, write_file, get_decrypted_file_path
 import os
 
 MAX_RSA_BLOCK_SIZE = 256

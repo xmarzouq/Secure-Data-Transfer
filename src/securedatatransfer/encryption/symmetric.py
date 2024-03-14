@@ -1,7 +1,7 @@
 import os
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
-from utils.file_operations import read_file, write_file, get_encrypted_file_path
+from ..utils.file_operations import read_file, write_file, get_encrypted_file_path
 
 
 def encrypt_aes(file_path, directory):

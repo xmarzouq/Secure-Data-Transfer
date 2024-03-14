@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "SecureDataTransfer"
+version = "1.0"
+description = "User-friendly Python GUI for seamless and secure file encryption and transfer, enhancing data privacy."
+authors = ["Marzouq <mo.ali@gmx.com>"]
+readme = "README.md"
+repository = "https://github.com/xmarzouq/sdt"
+license = "Apache-2.0"
+keywords = ["python", "AES", "RSA", "encryption", "file-transfer", "data-privacy"]
+
+packages = [
+    { include = "securedatatransfer", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyQt5 = "^5.15.10"
+pycryptodome = "^3.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+secure-transfer = "securedatatransfer.main:main"

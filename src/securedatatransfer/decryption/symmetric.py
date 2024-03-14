@@ -1,5 +1,5 @@
 from Crypto.Cipher import AES
-from utils.file_operations import read_file, write_file, get_decrypted_file_path
+from ..utils.file_operations import read_file, write_file, get_decrypted_file_path
 import os
 
 

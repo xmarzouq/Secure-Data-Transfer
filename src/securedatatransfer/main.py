@@ -8,8 +8,8 @@ from PyQt5.QtWidgets import (
     QDesktopWidget,
 )
 import sys
-from gui.encryption_gui import EncryptionDialog
-from gui.decryption_gui import DecryptionDialog
+from .gui.encryption_gui import EncryptionDialog
+from .gui.decryption_gui import DecryptionDialog
 
 
 class MainWindow(QMainWindow):

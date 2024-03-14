@@ -11,9 +11,9 @@ from PyQt5.QtWidgets import (
     QApplication,
 )
 from PyQt5.QtCore import QObject, pyqtSignal, QThread
-from decryption.symmetric import decrypt_aes
-from decryption.asymmetric import decrypt_rsa
-from utils import file_operations as fo
+from ..decryption.symmetric import decrypt_aes
+from ..decryption.asymmetric import decrypt_rsa
+from ..utils import file_operations as fo
 
 
 class DecryptionWorker(QObject):

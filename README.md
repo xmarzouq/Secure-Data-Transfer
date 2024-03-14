@@ -59,15 +59,21 @@ The **Secure Data Transfer Device** seamlessly combines hardware and software co
 <!-- Software Components Section -->
 <h4 align="left" id="software-components">Software Components 📂</h4>
 
-- **`MainGUI.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
+- **`main.py`**: The intuitive graphical interface, allowing you to encrypt or decrypt files effortlessly.
 
-- **`Secure_Data_Transfer.py`**: The workflow manager, guiding you through file selection, encryption, and destination directory.
+- **`encryption/symmetric.py`**: Handles symmetric encryption, perfect for secure group sharing using the AES algorithm.
 
-- **`SymmetricEncryptAES.py`**: Handles symmetric encryption, perfect for secure group sharing using the AES algorithm.
+- **`encryption/asymmetric.py`**: Employs RSA encryption with public keys for individual sharing, ensuring data security.
 
-- **`AsymmetricRSAEncrypt.py`**: Employs RSA encryption with public keys for individual sharing, ensuring data security.
+- **`decryption/symmetric.py`**: Handles symmetric decryption, allowing the user to decrypt files that were encrypted using the AES algorithm.
 
-- **`Decrypt.py`**: Facilitates file decryption, supporting both symmetric and asymmetric encryption.
+- **`decryption/asymmetric.py`**: Employs RSA decryption with private keys, enabling the user to decrypt files that were encrypted using the RSA algorithm.
+
+- **`decryption_gui.py`**: The graphical interface for decrypting files.
+
+- **`encryption_gui.py`**: The graphical interface for encrypting files.
+
+- **`file_operations.py`**: Contains file operation functions for reading, writing, and manipulating file paths.
 
 <!-- Hardware Components Section -->
 <h4 align="left" id="hardware-components">Hardware Components 🧰</h4>
@@ -141,7 +147,7 @@ pip install --upgrade pip
 </ol>
 
 ```bash
-pip install secureDataTransfer
+pip install securedatatransfer
 ```
 
 <ol start="3">
@@ -149,7 +155,7 @@ pip install secureDataTransfer
 </ol>
 
 ```bash
-secure-data-transfer
+secure-transfer
 ```
 
 <!-- User Documentation Section -->
