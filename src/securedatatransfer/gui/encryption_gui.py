@@ -10,10 +10,11 @@ from PyQt5.QtWidgets import (
     QDesktopWidget,
 )
 from PyQt5.QtCore import Qt
-import time
+import time, os
 from ..encryption.symmetric import encrypt_aes
 from ..encryption.asymmetric import encrypt_rsa
 from ..utils import file_operations as fo
+from repo import insert_file
 from PyQt5.QtCore import QObject, pyqtSignal, QThread
 
 
@@ -144,12 +145,28 @@ class EncryptionDialog(QDialog):
     def onEncryptionComplete(self, key, encrypted_file_path):
         self.progressBar.setVisible(False)
         if key:  # Show the key for AES encryption
-            QMessageBox.information(self, "Encryption Key", f"Encryption key: {key}\n")
+            QMessageBox.information(self, "Encryption Key", f"Please copy the Encryption key below\n\nstore it securely as it will not be displayed again:\n {key}\n")
         QMessageBox.information(
             self,
             "Encryption Successful",
             f"File has been encrypted successfully.\n\n Encrypted file path: {encrypted_file_path}",
         )
+        original_file_name = self.selectedFilePath.split("/")[-1]
+        file_size = os.path.getsize(encrypted_file_path)  # Get the size of the encrypted file
+        
+        try:
+            insert_file(
+                file_name=encrypted_file_path.split("/")[-1],
+                original_file_name=original_file_name,
+                encryption_method=self.combo.currentData(),
+                file_path=encrypted_file_path,
+                key=key,
+                file_size=file_size
+            )
+            QMessageBox.information(self, "Database Update", "File details added to database successfully.")
+        except Exception as e:
+            QMessageBox.critical(self, "Database Error", f"Failed to add file details to database: {e}")
+
         self.thread.quit()
         self.thread.wait()
         self.accept()

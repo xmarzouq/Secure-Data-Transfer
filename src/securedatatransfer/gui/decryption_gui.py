@@ -14,6 +14,7 @@ from PyQt5.QtCore import QObject, pyqtSignal, QThread
 from ..decryption.symmetric import decrypt_aes
 from ..decryption.asymmetric import decrypt_rsa
 from ..utils import file_operations as fo
+from repo import delete_file
 
 
 class DecryptionWorker(QObject):
@@ -173,6 +174,7 @@ class DecryptionDialog(QDialog):
             "Decryption Successful",
             f"File has been decrypted successfully.\n\nStored file path: {decrypted_file_path}",
         )
+        delete_file(fo.get_file_name(self.selectedFilePath), fo.get_file_size(self.selectedFilePath))
         self.thread.quit()
         self.thread.wait()
         self.accept()
