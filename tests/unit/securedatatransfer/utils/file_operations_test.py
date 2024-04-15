@@ -12,10 +12,7 @@ from src.securedatatransfer.utils.file_operations import (
     get_file_name,
 )
 
-# Mock data and paths
-original_file_path = "assets/test/encrypted/test.txt"
-encrypted_file_path = "assets/test/encrypted/test.txt.enc"
-temp_directory = "assets/temp"
+# Test data
 test_data = b"Test data for writing."
 
 
@@ -24,7 +21,7 @@ def setup_file(tmpdir):
     """Fixture to set up and tear down a temporary file."""
     file = tmpdir.join("testfile.txt")
     file.write_binary(test_data)
-    yield str(file)
+    return str(file)
 
 
 def test_read_file(setup_file):
@@ -46,35 +43,37 @@ def test_get_file_size(setup_file):
     assert size == len(test_data)
 
 
-def test_get_encrypted_file_path():
+def test_get_encrypted_file_path(setup_file):
     """Test generating encrypted file path."""
-    encrypted_path = get_encrypted_file_path(original_file_path)
-    assert encrypted_path == encrypted_file_path
+    encrypted_path = get_encrypted_file_path(setup_file)
+    expected_encrypted_path = f"{setup_file}.enc"
+    assert encrypted_path == expected_encrypted_path
 
 
-def test_get_decrypted_file_path():
+def test_get_decrypted_file_path(setup_file):
     """Test generating decrypted file path."""
+    encrypted_file_path = f"{setup_file}.enc"
     decrypted_path = get_decrypted_file_path(encrypted_file_path)
-    assert decrypted_path == original_file_path
+    assert decrypted_path == setup_file
 
 
 @patch("PyQt5.QtWidgets.QFileDialog.getOpenFileName")
-def test_select_file(mock_get_open_file_name):
+def test_select_file(mock_get_open_file_name, setup_file):
     """Test file selection dialog."""
-    mock_get_open_file_name.return_value = (original_file_path, None)
+    mock_get_open_file_name.return_value = (setup_file, None)
     selected_file = select_file()
-    assert selected_file == original_file_path
+    assert selected_file == setup_file
 
 
 @patch("PyQt5.QtWidgets.QFileDialog.getExistingDirectory")
-def test_select_directory(mock_get_existing_directory):
+def test_select_directory(mock_get_existing_directory, tmpdir):
     """Test directory selection dialog."""
-    mock_get_existing_directory.return_value = temp_directory
+    mock_get_existing_directory.return_value = str(tmpdir)
     selected_directory = select_directory()
-    assert selected_directory == temp_directory
+    assert selected_directory == str(tmpdir)
 
 
-def test_get_file_name():
+def test_get_file_name(setup_file):
     """Test extracting file name from path."""
-    file_name = get_file_name(original_file_path)
-    assert file_name == "test.txt"
+    file_name = get_file_name(setup_file)
+    assert file_name == "testfile.txt"

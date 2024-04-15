@@ -1,8 +1,6 @@
 import pytest, os
 from Crypto.Random import get_random_bytes
 from src.securedatatransfer.encryption.symmetric import encrypt_aes
-from src.securedatatransfer.decryption.symmetric import decrypt_aes
-from src.securedatatransfer.utils.file_operations import write_file, read_file
 
 
 @pytest.fixture
