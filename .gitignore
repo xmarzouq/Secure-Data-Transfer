@@ -416,3 +416,5 @@ setup.py
 TODO.todo
 .env
 .venv/
+assets/
+diagrams/

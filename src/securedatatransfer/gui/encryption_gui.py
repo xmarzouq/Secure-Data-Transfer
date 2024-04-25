@@ -113,7 +113,7 @@ class EncryptionDialog(QDialog):
             QMessageBox.information(self, "", "Choose where to store the encrypted file to share")
             directory = fo.select_directory()
         elif method == "rsa":
-            QMessageBox.information(self, "", "Select your public key")
+            QMessageBox.information(self, "", "Select the recipient's public key")
             publicKeyPath = fo.select_file(
                 "Select Public Key", "Public Key Files (*.pem);;"
             )
